@@ -10,6 +10,7 @@
       <label for="email">Email:</label></br>
       <input type="email" placeholder="Enter Your Email">
     </div>
+    <button>Submit</button>
   </form>
 </body>
 </html>
