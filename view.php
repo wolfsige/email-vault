@@ -15,8 +15,8 @@
 <?php foreach($emails as $item): ?>
 <div class="email-list">
   <p class="email-list-body">
-    <?php echo $item['email']; ?>
     <div>
+      <?php echo $item['email']; ?>
       Owner: <?php echo $item['name']; ?>
     </div>
   </p>
