@@ -1,4 +1,4 @@
-<?php include'inc/header.php'; ?>
+<?php include 'inc/header.php'; ?>
 
 <?php
   $name = $email = '';
@@ -30,7 +30,7 @@
   }
 ?>
 
-  <h1>Emails Go Here</h1>
+  <h1>Add a new Name and Email!</h1>
   <form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>" method="POST">
     <div>
       <label for="name">Name:</label></br>
