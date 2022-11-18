@@ -25,6 +25,7 @@
 ?>
 
 <h1>Add a new Name and Email!</h1>
+
 <form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>" method="POST">
     <div class="body">
         <div class="text">
