@@ -1,57 +1,57 @@
 :root {
-  --main: rgb(114, 4, 165);
-  --dark: rgb(38, 37, 37);
+    --main: rgb(114, 4, 165);
+    --dark: rgb(38, 37, 37);
 }
 
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
 }
 
 h1.nav {
-  color: white;
-  font-size: 28px;
-  letter-spacing: 2px;
+    color: white;
+    font-size: 28px;
+    letter-spacing: 2px;
 }
 
 .container{
-  max-width: 1280px;
-  margin: 0 auto;
+    max-width: 1280px;
+    margin: 0 auto;
 
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 nav {
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 99;
-  background-color: var(--dark);
-  padding: 16px 32px;
-  border-bottom: 5px solid var(--main);
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 99;
+    background-color: var(--dark);
+    padding: 16px 32px;
+    border-bottom: 5px solid var(--main);
 }
 
 .links {
-  display: flex;
-  flex: 1 1 0%;
-  justify-content: flex-end;
-  margin: 0 -16px;
+    display: flex;
+    flex: 1 1 0%;
+    justify-content: flex-end;
+    margin: 0 -16px;
 }
 
 .links a {
-  color: white;
-  margin: 0 16px;
-  font-weight: 600;
-  text-decoration: none;
-  transition: 0.8s;
-  padding: 8px 16px;
-  border-radius: 100px;
+    color: white;
+    margin: 0 16px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: 0.8s;
+    padding: 8px 16px;
+    border-radius: 100px;
 }
 
 .links a:hover{
-  background-color: var(--main);
+    background-color: var(--main);
 }
