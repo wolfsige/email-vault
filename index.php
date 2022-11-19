@@ -20,7 +20,13 @@
 
       if(empty($nameErr && $emailErr)){
           $sql = "INSERT INTO `vault-data` (name, email) VALUES('$name', '$email')";
-      }
+
+          if(mysqli_query($conn, $sql)){
+            header('Location: view.php');
+          } else {
+            echo 'Error' . mysqli_error($conn);
+          }
+      } 
   }
 ?>
 
