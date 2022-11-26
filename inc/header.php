@@ -14,8 +14,8 @@
         <div class="container">
             <h1 class="nav">Email Vault</h1>
             <div class="links">
-              <a href="/email-vault/index.php">Home</a>
-              <a href="/email-vault/view.php">Emails</a>
+              <a href="/email-vault/index">Home</a>
+              <a href="/email-vault/view">Emails</a>
             </div>
           </div>
      </nav>
