@@ -15,7 +15,7 @@
       if(empty($_POST['email'])){
           $emailErr = 'An Email is Required';
       } else {
-          $email = filter_input(INPUT_POST, 'email', FILTER_SANITIZE_EMAIL);
+          $email = mysqli_real_escape_string($conn, $_POST['email']);
       }
 
       if(empty($nameErr && $emailErr)){
