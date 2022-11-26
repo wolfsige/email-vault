@@ -1,5 +1,5 @@
-<?php include 'inc/header.php'; ?>
-<link rel="stylesheet" href="style/index-style.css">
+<?php include '../inc/header.php'; ?>
+<link rel="stylesheet" href="../style/index-style.css">
 
 <?php
     $name = $email = '';

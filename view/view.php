@@ -1,5 +1,5 @@
-<?php include'inc/header.php'; ?>
-<link rel="stylesheet" href="style/view-style.css">
+<?php include'../inc/header.php'; ?>
+<link rel="stylesheet" href="../style/view-style.css">
 
 <?php 
     $sql = 'SELECT * FROM `vault-data`';
