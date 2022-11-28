@@ -4,30 +4,31 @@
 <?php
     $name = $email = '';
     $nameErr = $emailErr = '';
+    
 
-    if(isset($_POST['submit'])){
-        if(empty($_POST['name'])){
-            $nameErr = 'A Name is Required';
-        } else {
-            $name = filter_input(INPUT_POST, 'name', FILTER_SANITIZE_SPECIAL_CHARS);
-        }
-  
-      if(empty($_POST['email'])){
-          $emailErr = 'An Email is Required';
-      } else {
-          $email = mysqli_real_escape_string($conn, $_POST['email']);
-      }
-
-      if(empty($nameErr && $emailErr)){
-          $sql = "INSERT INTO `vault-data` (name, email) VALUES('$name', '$email')";
-
-          if(mysqli_query($conn, $sql)){
-            header('Location: http://localhost/email-vault/emails/');
+        if(isset( $_POST ['submit'])){
+            if(empty( $_POST ['name'])){
+                $nameErr = 'A Name is Required';
+            } else {
+                $name = filter_input(INPUT_POST, 'name', FILTER_SANITIZE_SPECIAL_CHARS);
+            }
+        
+          if(empty( $_POST ['email'])){
+              $emailErr = 'An Email is Required';
           } else {
-            echo 'Error' . mysqli_error($conn);
+              $email = mysqli_real_escape_string( $conn , $_POST ['email']);
           }
-      } 
-  }
+        
+          if(empty( $nameErr && $emailErr )){
+              $sql = "INSERT INTO `vault-data` (name, email) VALUES(' $name ', ' $email ')";
+        
+              if(mysqli_query( $conn , $sql )){
+                header('Location: http://localhost/email-vault/emails/');
+              } else {
+                echo 'Error' . mysqli_error( $conn );
+              }
+          } 
+        }
 ?>
 
 <h1>Add a new Name and Email!</h1>
